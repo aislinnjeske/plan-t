@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Plot from './Plot.js'
+import Plant from './Plant.js'
+import broccoliPic from './public/broccoli.png'
+import tomatoPic from './public/tomato.png'
 
 function App() {
+
+  let plants = [
+    {
+      "name":"broccoli",
+      "space":"12",
+      "color":"green",
+      "picture":broccoliPic
+    },
+    {
+      "name":"cherry tomato",
+      "space":"8",
+      "color":"red",
+      "picture":tomatoPic
+    }
+  ]
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Plot plants={plants}/>
     </div>
   );
+
 }
 
 export default App;
