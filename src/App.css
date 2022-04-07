@@ -2,15 +2,35 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.container {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gridLayout {
+  background-color: #704211;
+  border: 5px solid black;
+  height: 200px; 
+  width: 300px;
+}
+
+.plotItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #704211;
+}
+
+.plotItem img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .App-header {
