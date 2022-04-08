@@ -8,6 +8,10 @@
   }
 }
 
+.list {
+  display: flex;
+}
+
 .container {
   display: flex; /* or inline-flex */
   flex-direction: row;
@@ -31,6 +35,11 @@
 .plotItem img {
   max-height: 100%;
   max-width: 100%;
+}
+
+.seedBag img {
+  height: 50px;
+  width: 50px;
 }
 
 .App-header {

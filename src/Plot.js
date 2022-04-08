@@ -8,7 +8,7 @@ function Plot(props) {
     return (
         <div>
             <GridLayout
-            className="gridLayout"
+            className="layout"
             isResizable={false}
             autoSize={false}
             allowOverlap={false}
